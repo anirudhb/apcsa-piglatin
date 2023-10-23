@@ -39,7 +39,7 @@ public class PigLatin {
 		}
 		return String.join(" ", out);
 	}
-
+	//used to encode a given word
 	private static String encodeWord(String word) {
 		// vowels
 		for (char vowel : Constants.vowels) {
@@ -68,6 +68,7 @@ public class PigLatin {
 			return word;
 		return word.substring(vowelStart) + word.substring(0, vowelStart) + "ay";
 	}
+	//used to decode a given word 
 
 	private static String decodeWord(String word_) {
 		if (word_.lastIndexOf("ay") == -1)
